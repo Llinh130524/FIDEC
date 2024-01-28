@@ -1,0 +1,362 @@
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .top-bar {
+        background-color: #333;
+        color: #fff;
+        padding: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .brand {
+        font-size: 1.0em;
+        font-weight: none;
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+    }
+
+    .action-btn {
+        background: linear-gradient(to right, yellow, orange);
+        color: #333;
+        border: none;
+        padding: 8px 16px;
+        margin-left: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .social-icons {
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .social-icon {
+        margin-left: 10px;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    .menu-slider{
+        position: relative;
+        margin-bottom: 4em;
+        z-index: 0;
+    }
+
+    .social-menu {
+        position: absolute;
+        width: 350px;
+        right: 0;
+        top: 0;
+        display: none;
+        z-index: 1;
+    }
+
+    .social-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background: #CCC;
+    }
+
+    .social-list li {
+        margin: 10px;
+        padding-top: 10px;
+        color: black;
+    }
+
+    .social-list li a {
+        margin-right: 10px;
+        margin-left: 10px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .bottom-menu {
+        background-color: #333;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white;
+        margin-right: 5%;
+    }
+
+    .toggle-btn {
+        background: #333;
+        border: 1px solid #CCC;
+        color: white;
+        margin-left: 10px;
+        font-size: 1em;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none;
+        /* Ẩn nút mặc định */
+    }
+
+    .menu-options {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .menu-options.show-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .menu-options a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .cart-button {
+        margin-left: 10px;
+        display: flex;
+    }
+
+    @media screen and (max-width: 850px) {
+        .top-bar {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .brand {
+            margin-bottom: 10px;
+        }
+
+        .actions {
+            margin-top: 10px;
+        }
+
+        .menu-options {
+            margin-top: 10px;
+            position: static;
+            display: none;
+        }
+
+        .toggle-btn {
+            background: #333;
+            border: 1px solid #CCC;
+            color: white;
+            margin-left: 10px;
+            font-size: 1em;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            /*Hien nut mac dinh*/
+        }
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .slider-container {
+        padding-top: 10px;
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .div-title {
+        color: white;
+        margin-left: 1.5%;
+    }
+
+    .slide {
+        min-width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .slide img {
+        width: 90%;
+        border-radius: 5%;
+        height: auto;
+    }
+
+    .prev-btn,
+    .next-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        background-color: rgba(232, 237, 240, 0.1);
+    }
+
+    .prev-btn {
+        left: 0;
+    }
+
+    .prev-btn i {
+        color: aliceblue;
+    }
+
+    .next-btn i {
+        color: aliceblue;
+    }
+
+    .next-btn {
+        right: 0;
+    }
+
+    @media (min-width: 600px) {
+        .slide {
+            min-width: 50%;
+        }
+    }
+
+    @media (min-width: 900px) {
+        .slide {
+            min-width: 25%;
+        }
+    }
+
+    .list-product{
+        display: flex;
+    }
+
+    .product-card{
+        width: 20%;
+        
+    }
+
+    .product{
+        width: 90%;
+        border-radius: 3%;
+        background: #333;
+        border: 1px solid #CCC;
+        transition: transform 0.3s ease-in-out;
+    }
+    .product:hover{
+        transform: scale(1.05);
+    }
+
+    .product img{
+        width: 100%;
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+    }
+
+    .product-des{
+        width: 90%;
+        text-align: left;
+    }
+
+    .addcart-btn{
+        width: 90%;
+        margin-bottom: 1em;
+    }
+
+    .intro-slider-container{
+        width: 100%;
+        display: flex;
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+    .intro-img{
+        width: 65%;
+    }
+    .intro-img img{
+        width: 100%;
+        height: auto;
+        margin-left: 1.5em;
+    }
+    .intro-text{
+        width: 35%;
+        margin-right: 1.5em;
+        background-color: black;
+    }
+
+    .intro-text h1{
+        color: white;
+        font-size: 2.5em;
+        text-align: center;
+        
+    }
+
+    .intro-text p{
+        color: white;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .intro-btn{
+        margin-bottom: 2em;
+    }
+
+    .gradient-bgtext {
+        font-size: 3em;
+        background-image: linear-gradient(to right, yellow, orange);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        transition: color 2s;
+    }
+    
+    .gradient-bgtext:hover {
+        color: blue;
+    }
+    
+
+
+footer {
+    background-color: #222; 
+    color: white; 
+    padding: 20px; 
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-social-icons {
+    font-size: 24px;
+}
+
+
+    

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/home.js"></script>
+    <script src="https://kit.fontawesome.com/d75d72b9b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background: linear-gradient(to bottom, #333, #ccc);">
+
+    <div class="top-bar">
+        <div class="brand">Discover, find and sell extraordinary NFT with us</div>
+        <div class="actions">
+            <button class="action-btn">CREATE NFT</button>
+            <div class="social-icons">
+                <i class="social-icon fab fa-facebook"></i>
+                <i class="social-icon fab fa-twitter"></i>
+                <i class="social-icon fab fa-instagram"></i>
+                <i class="social-icon fab fa-telegram"></i>
+                <i class="social-icon fas fa-share-alt"></i>
+            </div>
+        </div>
+    </div>
+    <hr style="margin: 0; color: white">
+    </hr>
+
+    <div class="bottom-menu">
+        <div class="logo">FIDEC</div>
+        <div class="menu-options" id="menuOptions">
+            <a href="#">Home</a>
+            <a href="#">Collector</a>
+            <a href="#">NFT Marketplace</a>
+            <a href="#">Features</a>
+            <a href="#">Pages</a>
+            <a href="#">Help</a>
+            <a href="#">Purchase</a>
+        </div>
+        <div class="cart-button">
+            <button class="action-btn"><i class="fa-solid fa-user"></i></button>
+            <button class="action-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="toggle-btn" id="toggleBtn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </div>
+
+    <div class="menu-slider">
+        <div class="social-menu" id="socialMenu">
+            <ul class="social-list">
+                <li><a href="#">Home</a></li>
+                <hr style="margin: 0; color: white">
+                </hr>
+                <li><a href="#">Collector</a></li>
+                <hr style="margin: 0; color: white">
+                </hr>
+                <li><a href="#">NFT Marketplace</a></li>
+                <hr style="margin: 0; color: white">
+                </hr>
+                <li><a href="#">Features</a></li>
+                <hr style="margin: 0; color: white">
+                </hr>
+                <li><a href="#">Pages</a></li>
+                <hr style="margin: 0; color: white">
+                </hr>
+                <li><a href="#">Help</a></li>
+                <hr style="margin: 0; color: white">
+                </hr>
+                <li><a href="#">Purchase</a></li>
+                <hr style="margin: 0; color: white">
+                </hr>
+            </ul>
+        </div>
+        <div class="div-container">
+            <h1 class="div-title">NFT just transacted</h1>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="img/1.jpg" alt="Product 1">
+                    </div>
+                    <div class="slide">
+                        <img src="img/2.jpg" alt="Product 1">
+                    </div>
+                    <div class="slide">
+                        <img src="img/3.jpg" alt="Product 1">
+                    </div>
+                    <div class="slide">
+                        <img src="img/4.jpg" alt="Product 2">
+                    </div>
+                    <div class="slide">
+                        <img src="img/5.jpg" alt="Product 2">
+                    </div>
+                    <div class="slide">
+                        <img src="img/6.jpg" alt="Product 2">
+                    </div>
+                    <div class="slide">
+                        <img src="img/7.jpg" alt="Product 2">
+                    </div>
+                    <div class="slide">
+                        <img src="img/8.jpg" alt="Product 2">
+                    </div>
+            
+                </div>
+                <button class="prev-btn" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next-btn" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="intro-slider-container">
+        <div class="intro-img">
+            <img src="img/How-To-Value-an-NFT-1.jpg" alt="">
+        </div>
+        <div style="font-size: 20px"class="intro-text">
+            <h1>Discover,</h1>
+            <h1>Collect & Sell</h1>
+            <h1 class="gradient-bgtext">Extraordinary</h1>
+            <h1>NFTs</h1>
+            <p>The Crypto Monkey is a high-quality collection of 100 unique monkeys on the NFTMart marketplace.</p>
+            <center><button class="action-btn intro-btn">DISCOVER</button></center>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <h1 class="div-title">NFT SHOP</h1>
+        <div class="list-product">
+            <div class="product-card">
+                <a href="#">
+                    <center><div class="product">
+                        <img src="img/1.jpg" alt="">
+                        <div class="product-des">
+                            <a href="#" style="color: white;"><strong>Product990</strong></a>
+                            <p style="color: white;"><strong>Price: 999$</strong></p>
+                            <button class="action-btn addcart-btn"><i class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                        </div>
+                    </div></center>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="#">
+                    <center><div class="product">
+                        <img src="img/1.jpg" alt="">
+                        <div class="product-des">
+                            <a href="#" style="color: white;"><strong>Product990</strong></a>
+                            <p style="color: white;"><strong>Price: 999$</strong></p>
+                            <button class="action-btn addcart-btn"><i class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                        </div>
+                    </div></center>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="#">
+                    <center><div class="product">
+                        <img src="img/1.jpg" alt="">
+                        <div class="product-des">
+                            <a href="#" style="color: white;"><strong>Product990</strong></a>
+                            <p style="color: white;"><strong>Price: 999$</strong></p>
+                            <button class="action-btn addcart-btn"><i class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                        </div>
+                    </div></center>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="#">
+                    <center><div class="product">
+                        <img src="img/1.jpg" alt="">
+                        <div class="product-des">
+                            <a href="#" style="color: white;"><strong>Product990</strong></a>
+                            <p style="color: white;"><strong>Price: 999$</strong></p>
+                            <button class="action-btn addcart-btn"><i class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                        </div>
+                    </div></center>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="#">
+                    <center><div class="product">
+                        <img src="img/1.jpg" alt="">
+                        <div class="product-des">
+                            <a href="#" style="color: white;"><strong>Product990</strong></a>
+                            <p style="color: white;"><strong>Price: 999$</strong></p>
+                            <button class="action-btn addcart-btn"><i class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                        </div>
+                    </div></center>
+                </a>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div style ="margin-top: 5%; margin-bottom:5%"class="product-container">
+        <div class="list-product">
+            <div class="product-card">
+                <a href="#">
+                    <center><div class="product">
+                        <img src="img/1.jpg" alt="">
+                        <div class="product-des">
+                            <a href="#" style="color: white;"><strong>Product990</strong></a>
+                            <p style="color: white;"><strong>Price: 999$</strong></p>
+                            <button class="action-btn addcart-btn"><i class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                        </div>
+                    </div></center>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="#">
+                    <center><div class="product">
+                        <img src="img/1.jpg" alt="">
+                        <div class="product-des">
+                            <a href="#" style="color: white;"><strong>Product990</strong></a>
+                            <p style="color: white;"><strong>Price: 999$</strong></p>
+                            <button class="action-btn addcart-btn"><i class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                        </div>
+                    </div></center>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="#">
+                    <center><div class="product">
+                        <img src="img/1.jpg" alt="">
+                        <div class="product-des">
+                            <a href="#" style="color: white;"><strong>Product990</strong></a>
+                            <p style="color: white;"><strong>Price: 999$</strong></p>
+                            <button class="action-btn addcart-btn"><i class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                        </div>
+                    </div></center>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="#">
+                    <center><div class="product">
+                        <img src="img/1.jpg" alt="">
+                        <div class="product-des">
+                            <a href="#" style="color: white;"><strong>Product990</strong></a>
+                            <p style="color: white;"><strong>Price: 999$</strong></p>
+                            <button class="action-btn addcart-btn"><i class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                        </div>
+                    </div></center>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="#">
+                    <center><div class="product">
+                        <img src="img/1.jpg" alt="">
+                        <div class="product-des">
+                            <a href="#" style="color: white;"><strong>Product990</strong></a>
+                            <p style="color: white;"><strong>Price: 999$</strong></p>
+                            <button class="action-btn addcart-btn"><i class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                        </div>
+                    </div></center>
+                </a>
+            </div>
+            
+        </div>
+        
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">FIDEC</div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-telegram"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
